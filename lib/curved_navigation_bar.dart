@@ -106,7 +106,7 @@ class CurvedNavigationBarState extends State<CurvedNavigationBar>
         builder: (context, constraints) {
           final maxWidth = min(
               constraints.maxWidth, widget.maxWidth ?? constraints.maxWidth);
-          final yOffset = widget.height < 75 ? (80) : (widget.height - 10);
+          final yOffset = widget.height < 100 ? (80) : (widget.height - 10);
           return Align(
             alignment: textDirection == TextDirection.ltr
                 ? Alignment.bottomLeft
